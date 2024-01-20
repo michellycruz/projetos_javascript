@@ -1,0 +1,5 @@
+const inputElement = document.querySelector('#input')
+const inputElement = document.querySelector('#input')
+const inputElement = document.querySelector('#input')
+const inputElement = document.querySelector('#input')
+const inputElement = document.querySelector('#input')
