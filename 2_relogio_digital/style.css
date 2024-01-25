@@ -14,15 +14,19 @@
 }
 
 .clock{
-    font-size: 3rem;
+    font-size: 5rem;
     font-weight: bold;
     border: 2px solid #07e212;
     border-radius: 10px;
-    padding: 10px;
+    padding: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     height: 80px;
     color: #07e212;
+}
+
+.clock span{
+    margin-right: 0.5rem;
 }
