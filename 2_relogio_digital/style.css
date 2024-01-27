@@ -1,7 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
-    font-family: monospace;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #333;
 }
 
@@ -16,7 +16,7 @@
 .clock{
     font-size: 5rem;
     font-weight: bold;
-    border: 2px solid #07e212;
+    border: 2px solid #ffffff;
     border-radius: 10px;
     padding: 15px;
     display: flex;
@@ -24,7 +24,7 @@
     align-items: center;
     text-align: center;
     height: 80px;
-    color: #07e212;
+    color: #ffffff;
 }
 
 .clock span{
