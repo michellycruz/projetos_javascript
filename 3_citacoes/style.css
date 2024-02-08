@@ -20,7 +20,7 @@ body{
     width: 600px;
     padding: 15px;
     border-radius: 8px;
-    height: 150px;
+    height: 200px;
     color: white;
     display: flex;
     justify-content: center;
@@ -28,4 +28,25 @@ body{
     flex-direction: column;
 }
 
-.
+.frase{
+    padding: 15px;
+    background-color: rgba(188, 102, 238, 0.562);
+    margin-top: 30px;
+}
+
+.btnGerador{
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 30px;
+    width: 100px;
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: white;
+    font-weight: bolder;
+}
+
+.btnGerador:hover{
+    background-color: rgba(57, 15, 82, 0.753);
+    color: white;
+}
