@@ -46,3 +46,14 @@ const quotes = [
     },
   ];
   
+  let frase = document.querySelector(".frase");
+  let author = document.querySelector(".author");
+  let btnGerador = document.querySelector(".btnGerador");
+
+  function getQuote(){
+    const index = Math.floor(Math.random() * quotes.length);
+    frase.textContent = quotes[index].quote;
+    author.textContent = quotes[index].author;
+  }
+
+  btnGerador.addEventListener("click", getQuote);
