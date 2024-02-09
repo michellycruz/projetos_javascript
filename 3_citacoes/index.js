@@ -52,8 +52,10 @@ const quotes = [
 
   function getQuote(){
     const index = Math.floor(Math.random() * quotes.length);
+    
     frase.textContent = quotes[index].quote;
     author.textContent = quotes[index].author;
+
   }
 
   btnGerador.addEventListener("click", getQuote);
