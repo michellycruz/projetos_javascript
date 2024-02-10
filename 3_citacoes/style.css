@@ -5,7 +5,7 @@
 }
 
 body{
-    /* background-image: linear-gradient(rgb(131, 29, 190), rgb(255, 255, 255)); */
+    background-image: linear-gradient(rgb(131, 29, 190), rgb(190, 104, 240));
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
@@ -19,8 +19,8 @@ body{
     background-color: rgb(131, 29, 190);
     width: 600px;
     padding: 15px;
-    border-radius: 3px;
-    height: 200px;
+    border-radius: 5px;
+    height: 250px;
     color: white;
     display: flex;
     justify-content: center;
@@ -31,14 +31,23 @@ body{
 .frase{
     padding: 15px;
     background-color: rgba(188, 102, 238, 0.562);
-    margin-top: 30px;
+    margin: 20px;
+}
+
+.textos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    height: 170px;
 }
 
 .btnGerador{
     padding: 10px;
     border-radius: 3px;
     border: none;
-    margin-top: 30px;
+    margin-top: 20px;
     width: 100px;
     transition: 0.2s;
     cursor: pointer;
