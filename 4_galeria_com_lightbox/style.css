@@ -2,7 +2,6 @@
     padding: 0px;
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url();
 }
 
 h1{
@@ -53,7 +52,7 @@ h1{
 }
 
 .lightbox-image{
-    max-width: 800px;
+    max-width: 700px;
     object-fit: cover;
 }
 
@@ -76,5 +75,9 @@ h1{
 @media (max-width:530px) {
     .gallery{
         flex-direction:column
+    }
+
+    .lightbox-image{
+        max-width: 300px;
     }
 }
