@@ -33,6 +33,7 @@ h1{
 }
 
 .lightbox{
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -46,9 +47,33 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
+    width: 100%;
 }
 
 .lightbox-image{
     max-width: 800px;
     object-fit: cover;
+}
+
+.lightbox-close{
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    font-size: 2rem;
+    color: white;
+    padding: .1rem .3rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.lightbox-close:hover{
+    color: black;
+}
+
+@media (max-width:530px) {
+    .gallery{
+        flex-direction:column
+    }
 }
