@@ -91,7 +91,7 @@ h1{
     color: gray;
 }
 
-@media (max-width:1200px) {
+@media (max-width:1300px) {
     .lightbox-image{
         max-width: 400px;
     }
