@@ -93,7 +93,7 @@ h1{
 
 @media (max-width:1300px) {
     .lightbox-image{
-        max-width: 400px;
+        max-width: 300px;
     }
 }
 @media (max-width:530px) {
