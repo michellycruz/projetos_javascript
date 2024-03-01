@@ -2,6 +2,11 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+:root{
+    --verde: #4caf50;
+    --cinza: #ddd;
+}
+
 h1{
     text-align: center;
 }
@@ -14,13 +19,31 @@ h1{
     width: 100%;
     height: 20px;
     border-radius: 10px;
-    background-color: #ddd;
+    background-color: var(--cinza);
 }
 
 .progress{
     width: 0%;
     height: 100%;
-    background-color: #4caf50;
+    background-color: var(--verde);
     border-radius: 10px;
     transition: width 1s ease-in-out;
+}
+
+.controls{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+button{
+    padding: .4rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: var(--verde);
+    border: 2px solid var(--verde);
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
 }
