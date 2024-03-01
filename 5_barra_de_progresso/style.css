@@ -4,6 +4,7 @@
 
 :root{
     --verde: #4caf50;
+    --verdeEscuro: #2e8b57;
     --cinza: #ddd;
 }
 
@@ -46,4 +47,19 @@ button{
     color: white;
     cursor: pointer;
     transition: 0.4s;
+}
+
+button i {
+    margin-left: .2rem;
+    margin-right: .2rem;
+}
+
+#previous-btn{
+    background-color: transparent;
+    color: var(--verde);
+}
+
+button:hover, #previous-btn:hover{
+    background-color: var(--verdeEscuro);
+    color: white;
 }
