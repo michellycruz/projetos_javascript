@@ -8,6 +8,11 @@ function updateProgressBar(){
     progressBar.style.width = progress + "%";
 }
 
+
+function step(){
+    
+}
+
 function nextStep(){
     progress += 10;
     if(progress > 100) progress = 100;
