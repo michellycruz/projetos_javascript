@@ -9,22 +9,29 @@ function updateProgressBar(){
 }
 
 
-function step(){
-    
+function step(direction){
+    if(direction === "next"){
+        progress += 10;
+        if(progress > 100) progress = 100;
+    } else if(direction === "previous"){
+        progress -= 10;
+        if(progress < 0) progress = 0;
+    }
+
+    updateProgressBar();
 }
 
 function nextStep(){
-    progress += 10;
-    if(progress > 100) progress = 100;
-    updateProgressBar();
+    
 }
-
-nextBtn.addEventListener("click", nextStep);
 
 function previousStep(){
-    progress -= 10;
-    if(progress < 0) progress = 0;
-    updateProgressBar();
+
 }
 
-previousBtn.addEventListener("click", previousStep);
+nextBtn.addEventListener("click", function (){
+    step("next");
+});
+previousBtn.addEventListener("click", function(){
+    step("previous");
+});
