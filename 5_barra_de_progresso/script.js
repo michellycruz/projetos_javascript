@@ -21,14 +21,6 @@ function step(direction){
     updateProgressBar();
 }
 
-function nextStep(){
-    
-}
-
-function previousStep(){
-
-}
-
 nextBtn.addEventListener("click", function (){
     step("next");
 });

@@ -38,8 +38,8 @@ h1{
 }
 
 button{
-    padding: .4rem 1rem;
-    font-size: 1rem;
+    padding: 10px 18px;
+    font-size: 16px;
     font-weight: bold;
     border-radius: 5px;
     background-color: var(--verde);
@@ -47,6 +47,20 @@ button{
     color: white;
     cursor: pointer;
     transition: 0.4s;
+}
+
+@media (max-width: 800px) {
+    button{
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+    h1{
+        font-size: 20px;
+    }
+
+    .container{
+        max-width: 80%;
+    }
 }
 
 button i {
