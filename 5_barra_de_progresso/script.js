@@ -5,7 +5,7 @@ const nextBtn = document.querySelector("#next-btn");
 let progress = 0;
 
 function updateProgressBar(){
-    progressBar.style.width = "%";
+    progressBar.style.width = progress + "%";
 }
 
 function nextStep(){
@@ -15,3 +15,11 @@ function nextStep(){
 }
 
 nextBtn.addEventListener("click", nextStep);
+
+function previousStep(){
+    progress -= 10;
+    if(progress < 0) progress = 0;
+    updateProgressBar();
+}
+
+previousBtn.addEventListener("click", previousStep);
