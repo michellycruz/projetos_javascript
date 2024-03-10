@@ -59,3 +59,8 @@ button{
 button:hover{
     background-color: #132f63;
 }
+
+.error input,
+.error textarea {
+    border-color: #e21111;
+}
