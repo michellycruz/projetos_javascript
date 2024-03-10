@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    width: 500px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1{
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-control{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+label{
+    font-weight: bold;
+}
+
+input, textarea{
+    padding: .8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.error-message{
+    color: #e21111;
+    margin-top: 0.2rem;
+}
