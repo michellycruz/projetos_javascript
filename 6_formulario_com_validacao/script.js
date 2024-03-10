@@ -40,11 +40,18 @@ function validateInputs(){
     }
     if(emailValue === ""){
         setError(email, "E-mail não pode ficar em branco");
+    } else if(!isValidEmail(emailValue)){
+        setError(email, "E-mail inválido");
     }
+
     if(assuntoValue === ""){
         setError(assunto, "Assunto não pode ficar em branco");
     }
     if(mensagemValue === ""){
         setError(mensagem, "Mensagem não pode ficar em branco");
     }
+}
+
+function isValidEmail(email){
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
