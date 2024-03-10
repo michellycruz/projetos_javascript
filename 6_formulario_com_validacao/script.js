@@ -3,12 +3,13 @@ const nome = document.querySelector("#nome");
 const email = document.querySelector("#email");
 const assunto = document.querySelector("#assunto");
 const mensagem = document.querySelector("#mensagem");
-const errorMessages = document.querySelector(".error-message");
+const errorMessages = document.querySelectorAll(".error-message");
 
 
 
 form.addEventListener("submit", (event) => {
     event.preventDefault();
+    resetErrors();
     validateInputs();
 });
 
@@ -16,6 +17,16 @@ function setError(input, errorMessage){
     const errorMessageElement = input.nextElementSibling;
     errorMessageElement.textContent = errorMessage;
     input.parentElement.classList.add("error");
+}
+
+function resetErrors(){
+    errorMessages.forEach((msg) => {
+        msg.textContent = "";
+    });
+    nome.parentElement.classList.remove("error")
+    email.parentElement.classList.remove("error")
+    assunto.parentElement.classList.remove("error")
+    mensagem.parentElement.classList.remove("error")
 }
 
 function validateInputs(){
