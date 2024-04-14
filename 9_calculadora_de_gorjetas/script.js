@@ -5,7 +5,7 @@ function calculateTip(){
     const billAmount = parseFloat(document.querySelector("#billAmount").value)
     const serviceQuality = parseFloat(document.querySelector("#serviceQuality").value)
 
-    if(billAmount === ""){
+    if(isNaN(billAmount)){
         alert("Por favor, preencha os dados.")
         return;
     }
