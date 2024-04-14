@@ -71,6 +71,12 @@ button:hover{
     transition: .2s;
 }
 
+input:disabled{
+    border: 1px solid #ffea74;
+    background-color: #fff3b2;
+    color: #505050;
+}
+
 
 @media (max-width: 450px) {
     .calculator{
