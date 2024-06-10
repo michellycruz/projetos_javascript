@@ -45,10 +45,27 @@ async function createCards(){
     }
 }
 
-
+let flippedCards = 0
+let firstCard, secondCard;
+let attempts = 0
 
 function flipCard(){
-    
+    if(flippedCards < 2 && !this.classList.contains("flip")) {
+        flippedCards++
+        this.classList.add("flip")
+        if(flippedCards === 1){
+            firstCard = this
+        } else {
+            secondCard = this
+            attempts++
+            updateAttempts()
+        }
+    }
+}
+
+function updateAttempts(){
+    const attemptsElement = document.querySelector(".attempts")
+    attemptsElement.textContent = `Tentativas: ${attempts}`
 }
 
 createCards()
