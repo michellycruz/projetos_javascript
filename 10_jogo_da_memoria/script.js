@@ -76,7 +76,28 @@ function checkForMatch(){
     const isMatch = 
         firstCard.getAttribute("data-card") === 
         secondCard.getAttribute("data-card");
-        //desabilitar as cartas - desvirar as cartas
+    isMatch ? disabledCards() : unflipCards()
+}
+
+function disabledCards(){
+    firstCard.removeEventListener("click", flipCard)
+    secondCard.removeEventListener("click", flipCard)
+
+    if(document.querySelectorAll(".card:not(.flip)").length === 0){
+        showCongratulationsMessage()
+    }
+
+    resetBoard()
+}
+
+function unflipCards(){
+    setTimeout (() => {firstCard.classList.remove("flip")
+    secondCard.classList.remove("flip")
+    resetBoard()}, 1000)
+}
+
+function resetBoard(){
+    [flippedCards, firstCard, secondCard] = [0, null, null]
 }
 
 
@@ -86,5 +107,13 @@ function updateAttempts(){
     attemptsElement.textContent = `Tentativas: ${attempts}`
 }
 
+function showCongratulationsMessage(){
+    const congratulationsMessage = document.querySelector(".congratulations-container")
+    const congratulationsElement = document.createElement("p")
+    
+    congratulationsElement.classList.add("congratulations")
+    congratulationsElement.textContent = `Parabéns! Você venceu em ${attempts} tentativas`
+    congratulationsMessage.appendChild(congratulationsElement)
+}
 
 createCards()
