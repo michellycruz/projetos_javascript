@@ -56,7 +56,7 @@ async function createCards(){
     }
 }
 
-//vire a carta clicada
+//vira a carta clicada
 function flipCard(){
     if(flippedCards < 2 && !this.classList.contains("flip")) {
         flippedCards++
