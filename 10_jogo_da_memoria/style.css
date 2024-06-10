@@ -8,16 +8,19 @@
   }
   
   .container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 1rem;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 10px;
     max-width: 800px;
     margin: 0 auto;
+    justify-content: center;
+    align-items: center;
   }
   
   .card {
     position: relative;
     height: 200px;
+    width: 160px;
   }
   
   .card .front,

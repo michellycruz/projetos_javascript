@@ -67,8 +67,16 @@ function flipCard(){
             secondCard = this
             attempts++
             updateAttempts()
+            checkForMatch()
         }
     }
+}
+
+function checkForMatch(){
+    const isMatch = 
+        firstCard.getAttribute("data-card") === 
+        secondCard.getAttribute("data-card");
+        //desabilitar as cartas - desvirar as cartas
 }
 
 
