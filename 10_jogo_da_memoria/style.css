@@ -7,6 +7,17 @@ h1{
     margin: 1rem 0;
 }
 
+.congratulations {
+    font-size: 1.5rem;
+    padding: 0.4rem;
+    background-color: #0a790a;
+    color: #FFF;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 500px;
+    margin: 1rem auto;
+}
+
 .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -51,7 +62,6 @@ h1{
 .card .flip .back {
     transform: rotateY(0deg);
 }
-
 
 .attempts-container {
     text-align: center;
