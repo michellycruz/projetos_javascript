@@ -1,5 +1,8 @@
+
+//matriz com pares representando as cartas
 const cards = [1, 1, 2, 2, 3, 3, 4, 4];
 
+//objeto para armazenar as imagens correspondentes para cada carta
 async function generateImagePairs() {
     const imagePairs = {}
     for(let i = 0; i < cards.length; i++){
@@ -12,10 +15,18 @@ async function generateImagePairs() {
     return imagePairs;
 }
 
+
+// embaralha a matriz de cartas
 function shuffleCards(cards){
     cards.sort(() => Math.random() - 0.5)
 }
 
+let flippedCards = 0
+let firstCard, secondCard;
+let attempts = 0
+
+
+//seleciona as cartas e atribui um número da matriz a cada carta
 async function createCards(){
     const imagePairs = await generateImagePairs()
     shuffleCards(cards);
@@ -45,10 +56,7 @@ async function createCards(){
     }
 }
 
-let flippedCards = 0
-let firstCard, secondCard;
-let attempts = 0
-
+//vire a carta clicada
 function flipCard(){
     if(flippedCards < 2 && !this.classList.contains("flip")) {
         flippedCards++
@@ -63,9 +71,12 @@ function flipCard(){
     }
 }
 
+
+//atualiza o número de tentativas
 function updateAttempts(){
     const attemptsElement = document.querySelector(".attempts")
     attemptsElement.textContent = `Tentativas: ${attempts}`
 }
+
 
 createCards()
