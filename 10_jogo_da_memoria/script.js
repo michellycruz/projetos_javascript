@@ -115,6 +115,7 @@ function showCongratulationsMessage() {
   congratulationsMessage.appendChild(congratulationsElement);
 }
 
+//reseta o jogo
 let restartBtn = document.getElementById("restartBtn");
 restartBtn.addEventListener("click", () => {
   location.reload();
