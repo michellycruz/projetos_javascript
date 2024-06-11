@@ -82,3 +82,23 @@
     max-width: 500px;
     margin: 1rem auto;
   }
+
+  .restart-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  #restartBtn{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #3d3d3d;
+    color: white;
+    cursor: pointer;
+  }
+
+  #restartBtn:hover{
+    transition: .3s;
+    background-color: #000000;
+  }
