@@ -3,4 +3,30 @@
 *{
     font-family: "Montserrat", sans-serif;
     font-style: normal;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    color: #333;
+}
+
+html, body{
+    height: auto;
+    min-height: 100vh;
+}
+
+html {
+    background: linear-gradient(180deg, #ea03ff 0%, #0097ff 100%);
+}
+
+input:focus {
+    outline: none;
+}
+
+#register-container {
+    max-width: 900px;
+    min-height: 80vh;
+    margin: 2rem auto;
+    display: flex;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, 
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
