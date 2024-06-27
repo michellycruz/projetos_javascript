@@ -52,3 +52,91 @@ input:focus {
     color: white;
     word-spacing: 50px;
 }
+
+#register-form {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: #fdfdfd;
+    width: 50%;
+}
+
+#register-form h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+}
+
+#register-form p {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #aaa;
+    font-size: 0.8rem;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.form-control label {
+    font-weight: bolder;
+}
+
+.form-control input {
+    border: none;
+    border-bottom: 1px solid #aaa;
+    padding: 0.6rem 0;
+}
+
+#generate-password {
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+#register-form [type="submit"] {
+    background-color: #81D340;
+    color: white;
+    opacity: 0.8;
+    border: none;
+    align-self: flex-end;
+    padding: 1rem 1.4rem;
+    border-radius: 2rem;
+    max-width: 150px;
+    cursor: pointer;
+}
+
+#register-form [type="submit"]:hover{
+    transition: 0.5s;
+    background-color: #81D340;
+    opacity: 100%;
+}
+
+
+@media (max-width:950px) {
+
+    #register-banner h1 {
+        font-size: 2rem;
+        word-spacing: 10rem;
+    }
+
+    #register-container {
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    #register-form  {
+        width: auto;
+        height: auto;
+    }
+
+    #register-form h2 {
+        font-size: 1.5rem;
+    }
+
+    #register-banner{
+        width: auto;
+        height: auto;
+    }
+}
