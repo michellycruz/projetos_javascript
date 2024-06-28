@@ -102,7 +102,7 @@ input:focus {
 }
 
 #register-form #generated-password{
-    border: 1px solid #0099ff;
+    border: 1px solid #4d4d4d57;
     border-radius: 4px;
     font-weight: bold;
     font-size: 1.2rem;
@@ -141,7 +141,13 @@ input:focus {
 
     #register-banner h1 {
         font-size: 2rem;
-        word-spacing: 10rem;
+        word-spacing: 0;
+    }
+
+    #banner-layer {
+     display: flex;
+     justify-content: center;
+     align-items: center;
     }
 
     #register-container {
@@ -159,6 +165,7 @@ input:focus {
     }
 
     #register-banner{
+        text-align: center;
         width: auto;
         height: auto;
     }

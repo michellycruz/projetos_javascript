@@ -1,7 +1,7 @@
 // seleção de elementos
 
 const generatePasswordButton = document.querySelector("#generate-password")
-const generatePasswordElement = document.querySelector("#generate-password")
+const generatePasswordElement = document.querySelector("#generated-password")
 
 // funções
 const getLetterLowerCase = () => {
@@ -40,7 +40,10 @@ const generatePassword = (getLetterLowerCase, getLetterUpperCase, getNumber, get
             password += randomValue
         })
     }
-    console.log(password)
+    password = password.slice(0, passwordLength)
+
+    generatePasswordElement.style.display = "block"
+    generatePasswordElement.querySelector("h4").innerText = password
 }
 
 
