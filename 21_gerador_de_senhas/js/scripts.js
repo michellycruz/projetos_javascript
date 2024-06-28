@@ -5,11 +5,11 @@ const generatePasswordElement = document.querySelector("#generate-password")
 
 // funções
 const getLetterLowerCase = () => {
-    return console.log(String.fromCharCode(Math.floor(Math.random() * 26) + 97))
+    return String.fromCharCode(Math.floor(Math.random() * 26) + 97)
 }
 
 const getLetterUpperCase = () => {
-    return console.log(String.fromCharCode(Math.floor(Math.random() * 26) + 65))
+    return String.fromCharCode(Math.floor(Math.random() * 26) + 65)
 }
 
 const getNumber = () => {
