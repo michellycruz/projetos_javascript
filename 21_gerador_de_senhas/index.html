@@ -37,12 +37,25 @@
                 <p>Selecione as opções que você deseja</p>
                 <div class="form-control">
                     <label for="length">Quantidade de caracteres:</label>
-                    <input type="text" name="length" id="length" value="10">
+                    <input type="text" name="length" id="length" value="10" />
+                </div>
+                <div class="form-control">
+                    <label for="letters">Letras:</label>
+                    <input type="checkbox" name="letters" id="letters" checked />
+                </div>
+                <div class="form-control">
+                    <label for="numbers">Números:</label>
+                    <input type="checkbox" name="numbers" id="numbers" checked />
+                </div>
+                <div class="form-control">
+                    <label symbols">Símbolos:</label>
+                    <input type="checkbox" name="symbols" id="symbols" checked />
                 </div>
             </div>
             <div id="generated-password">
                 <p>Aqui está a sua senha:</p>
                 <h4></h4>
+                <button id="copy-password">Copiar</button>
             </div>
             <div class="form-control">
                 <label for="confirmPassword">Confirmação de senha:</label>
