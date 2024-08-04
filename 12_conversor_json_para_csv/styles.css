@@ -1,0 +1,30 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'OpenDyslexic', Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: 'OpenDyslexic';
+    src: url('fontes/OpenDyslexic-Bold.otf') format('opentype');
+}
+
+body{
+    background-color: #1d1d1d;
+    color: #47acff;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#converterForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+label{
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
