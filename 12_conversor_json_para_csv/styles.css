@@ -11,7 +11,7 @@
 
 body{
     background-color: #1d1d1d;
-    color: #47acff;
+    color: #81a5ac;
     text-align: center;
     box-sizing: border-box;
 }
@@ -25,6 +25,36 @@ body{
 }
 
 label{
-    margin-bottom: 0.5rem;
+    margin-bottom: .5rem;
     font-weight: bold;
+}
+
+textarea, pre {
+    width: 600px;
+    height: 200px;
+    padding: 0.6rem;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
+
+pre{
+    height: auto;
+    margin: 1.5rem auto;
+    text-align: left;
+}
+
+button{
+    margin-top: 0.8rem;
+    padding: 0.6rem;
+    font-size: 1rem;
+    background-color: #ccc;
+    border: 2px solid black;
+}
+
+button:hover{
+    transition: .4s;
+    border: 2px solid #81a5ac;
+    cursor: pointer;
 }
