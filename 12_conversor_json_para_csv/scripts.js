@@ -38,5 +38,23 @@ jsonToCsvButton.addEventListener("click", function() {
     const json = JSON.parse(converterInput.value.trim());
     const csv = jsonToCsv(json);
 
-    console.log(csv)
+    downloadCsv(csv)
 })
+
+function downloadCsv(csv){
+    const downloadLink = document.createElement("a");
+    downloadLink.setAttribute(
+        "href",
+        "data:text/csv;charset=utf-8," + encodeURIComponent(csv)
+    );
+
+    downloadLink.setAttribute("download", "data.csv")
+
+    downloadLink.style.display = "none";
+
+    document.body.appendChild(downloadLink);
+
+    downloadLink.click();
+
+    document.body.removeChild(downloadLink);
+}
