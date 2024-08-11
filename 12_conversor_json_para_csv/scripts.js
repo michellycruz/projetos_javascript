@@ -33,12 +33,42 @@ function jsonToCsv(json) {
     return csvRows.join("\n")
 }
 
+function csvToJson(csv){
+    const lines = csv.split("\n");
+    const headers = lines[0].split(",")
+    const json = []
+
+    for(let i = 1; i < lines.length; i++){
+
+        const values = lines[i].split(",");
+        const row = {}
+
+        for(let j = 0 ; j < headers.length ; j++){
+            let value = values[j]
+            if(value[0] === "{" || value[0] === "["){
+                value = JSON.parse(value)
+            }
+
+            row[headers[j]] = value
+        }
+
+        json.push(row)
+    }
+    console.log(json)
+}
+
 
 jsonToCsvButton.addEventListener("click", function() {
     const json = JSON.parse(converterInput.value.trim());
     const csv = jsonToCsv(json);
 
     downloadCsv(csv)
+})
+
+csvToJsonButton.addEventListener("click", function(){
+    const csv = converterInput.value.trim()
+
+    const json = csvToJson(csv)
 })
 
 function downloadCsv(csv){
