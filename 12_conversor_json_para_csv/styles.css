@@ -47,6 +47,7 @@ pre{
     height: auto;
     margin: 1.5rem auto;
     text-align: left;
+    font-family: monospace;
 }
 
 button{

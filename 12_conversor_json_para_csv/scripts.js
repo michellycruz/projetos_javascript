@@ -54,7 +54,8 @@ function csvToJson(csv){
 
         json.push(row)
     }
-    console.log(json)
+
+    return json;
 }
 
 
@@ -69,6 +70,8 @@ csvToJsonButton.addEventListener("click", function(){
     const csv = converterInput.value.trim()
 
     const json = csvToJson(csv)
+
+    displayJson(json)
 })
 
 function downloadCsv(csv){
@@ -87,4 +90,12 @@ function downloadCsv(csv){
     downloadLink.click();
 
     document.body.removeChild(downloadLink);
+}
+
+function displayJson(json){
+    const resultArea = document.createElement("pre")
+
+    resultArea.textContent = JSON.stringify(json, null, 2)
+
+    document.body.appendChild(resultArea)
 }
